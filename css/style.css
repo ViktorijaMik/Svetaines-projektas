@@ -26,6 +26,7 @@
     font-size: 20px;
 }
 
+
 /* index */
 
 h1{
@@ -70,6 +71,7 @@ h4{
     text-align: center;
 }
 
+
 /* filmografija */
 
 .movies{
@@ -77,6 +79,38 @@ h4{
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
+
+/* knygos */
+
+.book img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.book{
+    margin-bottom: 40px;
+}
+
+p a{
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+p a:hover{
+    color: black;
+}
+
+.description{
+    display: none;
+}
+
 
 /* footer */
 
