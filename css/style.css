@@ -98,22 +98,25 @@ h4{
     margin-bottom: 40px;
 }
 
-p a{
+p a,
+.bookstore-link h6 a{
     text-decoration: none;
     color: #8c8c8c;
 }
 
-p a:hover{
+p a:hover,
+.bookstore-link h6 a:hover{
     color: black;
 }
 
-.description{
+/* .description{
     visibility: hidden;
 }
 
 .book:hover .description{
     visibility: visible;
-}
+} */
+
 
 /* knyga-Sarunas-Bartas */
 
@@ -151,7 +154,8 @@ a:link{
     margin-bottom: 30px;  
 }
 
-.book-launch h6{
+.book-launch h6, 
+.bookstore-link h6{
     text-align: center;
 }
 
@@ -164,6 +168,10 @@ a:link{
 
 .book-launch-images img{
     margin: 10px;
+}
+
+.bookstore-link{
+    margin: auto 50px;
 }
 
 
