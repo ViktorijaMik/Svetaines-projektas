@@ -56,8 +56,10 @@ h1{
 @media (min-width: 768px) { 
     .grazina-bg{
         height: 100%;
+        background-position: center center;
     }
 }
+
 
 .bio{
     text-align: justify;
@@ -92,6 +94,8 @@ h4{
 .book p{
     text-align: center;
     margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .book{
@@ -154,24 +158,43 @@ a:link{
     margin-bottom: 30px;  
 }
 
-.book-launch h6, 
-.bookstore-link h6{
+.book-launch h6{
     text-align: center;
+    margin: auto 20px;
+}  
+
+ .book-launch-images{
+    margin: 20px;   
 }
 
-.book-launch-images{
+.image-row{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
+    justify-content: space-evenly;
 }
 
-.book-launch-images img{
-    margin: 10px;
+@media (max-width: 1200px) {
+   .image-row{
+       display: block;
+   }
+
+   .image-row img{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
+}
+
+
+.image-row img{
+    margin-bottom: 30px;
 }
 
 .bookstore-link{
-    margin: auto 50px;
+    margin: auto 20px;
+}
+
+.bookstore-link h6{
+    text-align: center;
 }
 
 
