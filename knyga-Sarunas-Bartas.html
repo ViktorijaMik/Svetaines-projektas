@@ -36,7 +36,7 @@
                         <a class="nav-link" href="reklamos.html">Reklamos</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Kontaktai</a>
+                        <a class="nav-link" href="kontaktai.html">Kontaktai</a>
                     </li>
                 </ul>
             </div>
@@ -59,8 +59,16 @@
 
                 <div>
                     <div class="book">
-                        <a href="images/Virselis-3d.jpg"><img src="images/Virselis-3.jpg"
-                                alt="Šarūnas Bartas: kai gyvenimas tampa kinu" width="300px"></a>
+                        <img src="images/Virselis-3.jpg" alt="Šarūnas Bartas: kai gyvenimas tampa kinu" id="image"
+                            style="width: 40%; cursor: pointer;">
+
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img src="images/Virselis-3.jpg" style="height: 90%;">
+                            </div>
+                        </div>
+
                         <p style="font-weight: bold; font-size: 20px; margin-top: 20px;">ŠARŪNAS BARTAS: KAI GYVENIMAS
                             TAMPA KINU, 2020</p>
                     </div>
@@ -189,36 +197,55 @@
                     </div>
                     <div class="book-launch">
                         <h6>Akimirkos iš knygos pristatymų "Open books" / "Vilnius skaito" / "Knygų mugėje"</h6>
-                        <div class="book-launch-images">
-                            <div class="image-row">
-                                <img src="images/Sarunas Bartas/SB-1.jpg" alt="Knygos pristatymas „Open books“"
-                                    title="Knygos pristatymas „Open books“" width="300px">
-                                <img src="images/Sarunas Bartas/SB-2.jpg" alt="Knygos pristatymas „Open books“"
-                                    title="Knygos pristatymas „Open books“" width="300px">
+                        <div class="container my-4">
+                            <div class="row d-flex justify-content-evenly">
+                                <div class="col">
+                                    <img class="mx-auto d-block mb-5" src="images/Sarunas-Bartas/SB-1.jpg"
+                                        alt="Knygos pristatymas „Open books“" title="Knygos pristatymas „Open books“"
+                                        width="300px">
+                                </div>
+                                <div class="col">
+                                    <img class="mx-auto d-block mb-5" src="images/Sarunas-Bartas/SB-2.jpg"
+                                        alt="Knygos pristatymas „Open books“" title="Knygos pristatymas „Open books“"
+                                        width="300px">
+                                </div>
                             </div>
-                            <div class="image-row">
-                                <img src="images/Sarunas Bartas/SB-3.jpg" alt="Knygos pristatymas „Open books“"
-                                    title="Knygos pristatymas „Open books“" width="300px">
-                                <img src="images/Sarunas Bartas/SB-4.jpg"
-                                    alt="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“"
-                                    title="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“" width="300px">
+                            <div class="row d-flex justify-content-evenly">
+                                <div class="col">
+                                    <img class="mx-auto d-block mb-5" src="images/Sarunas-Bartas/SB-3.jpg"
+                                        alt="Knygos pristatymas „Open books“" title="Knygos pristatymas „Open books“"
+                                        width="300px">
+                                </div>
+                                <div class="col">
+                                    <img class="mx-auto d-block mb-5" src="images/Sarunas-Bartas/SB-4.jpg"
+                                        alt="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“"
+                                        title="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“" width="300px">
+                                </div>
                             </div>
-                            <div class="image-row">
-                                <img src="images/Sarunas Bartas/SB-5.jpg"
-                                    alt="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“"
-                                    title="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“" width="300px">
-                                <img src="images/Sarunas Bartas/SB-6.jpg"
-                                    alt="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“"
-                                    title="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“" width="300px">
+                            <div class="row d-flex justify-content-evenly">
+                                <div class="col">
+                                    <img class="mx-auto d-block mb-5" src="images/Sarunas-Bartas/SB-5.jpg"
+                                        alt="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“"
+                                        title="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“" width="300px">
+                                </div>
+                                <div class="col">
+                                    <img class="mx-auto d-block mb-5" src="images/Sarunas-Bartas/SB-6.jpg"
+                                        alt="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“"
+                                        title="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“" width="300px">
+                                </div>
                             </div>
-                            <div class="image-row">
-                                <img src="images/Sarunas Bartas/SB-7.jpg"
-                                    alt="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“"
-                                    title="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“" width="300px">
-                                <img src="images/Sarunas Bartas/SB-8.jpg"
-                                    alt="Knygos pristatymas „Knygų mugėje“ su Sofoklio vadovu Ignu Staškevičiumi"
-                                    title="Knygos pristatymas „Knygų mugėje“ su Sofoklio vadovu Ignu Staškevičiumi"
-                                    width="300px">
+                            <div class="row d-flex justify-content-evenly">
+                                <div class="col">
+                                    <img class="mx-auto d-block mb-5" src="images/Sarunas-Bartas/SB-7.jpg"
+                                        alt="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“"
+                                        title="Knygos pristatymas „Vilnius skaito Lukiškių aikštėje“" width="300px">
+                                </div>
+                                <div class="col">
+                                    <img class="mx-auto d-block mb-5" src="images/Sarunas-Bartas/SB-8.jpg"
+                                        alt="Knygos pristatymas „Knygų mugėje“ su Sofoklio vadovu Ignu Staškevičiumi"
+                                        title="Knygos pristatymas „Knygų mugėje“ su Sofoklio vadovu Ignu Staškevičiumi"
+                                        width="300px">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -246,6 +273,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
