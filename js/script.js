@@ -1,5 +1,6 @@
 !(function () {
 
+  // Atsidaro knygu virseliu foto
     var modal = document.getElementById("myModal");
   
     var image = document.getElementById("image");
@@ -19,5 +20,14 @@
         modal.style.display = "none";
       }
     }
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        modal.style.display = "none";
+      }
+    });
   
   })();
+
+
+
