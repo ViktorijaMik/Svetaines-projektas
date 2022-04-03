@@ -235,17 +235,7 @@ a:link{
   }
 
   .gallery-img:hover{
-      opacity: 0.7;
-  }
-
-  .modal-header{
-      border-bottom: none !important;
-  }
-
-  .modal-header .close{
-      top: unset !important;
-      border: none;
-      background: none;
+      opacity: 0.8;
   }
 
 
@@ -287,6 +277,12 @@ a:link{
   .commercial h5{
       margin-top: 20px;
       margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+      .comm-images img{
+          width: 400px;
+      }
   }
 
 
