@@ -279,9 +279,9 @@ a:link{
       margin-bottom: 20px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
       .comm-images img{
-          width: 400px;
+          width: 350px;
       }
   }
 
@@ -335,4 +335,5 @@ a:link{
     }
 }
 
+    
   

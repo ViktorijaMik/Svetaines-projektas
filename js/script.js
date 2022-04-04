@@ -30,4 +30,10 @@
   })();
 
 
+//   jQuery(document).ready(function(){
+//     if (jQuery(window).width() < 770) {
+//         jQuery("a[data-lightbox]").attr('href', '').css({'cursor': 'pointer', 'pointer-events' : 'none'});
+//     }
+//  });
+
 
