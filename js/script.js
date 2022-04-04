@@ -30,10 +30,15 @@
   })();
 
 
+  // fade in fade out tarp puslapių
+  window.addEventListener("beforeunload", function () {
+    document.body.classList.add("animate-out");
+  });
+
+
 //   jQuery(document).ready(function(){
-//     if (jQuery(window).width() < 770) {
+//     if (jQuery(window).width() < 768) {
 //         jQuery("a[data-lightbox]").attr('href', '').css({'cursor': 'pointer', 'pointer-events' : 'none'});
 //     }
 //  });
-
 
