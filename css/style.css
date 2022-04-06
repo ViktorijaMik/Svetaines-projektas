@@ -1,63 +1,76 @@
 html {
     height: 100%;
     box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  
-  body {
+}
+
+body {
     position: relative;
     margin: 0;
     padding-bottom: 6rem;
     min-height: 100%;
-  }
+}
 
-  .animate-in {
+.animate-in {
     -webkit-animation: fadeIn .5s ease-in;
     animation: fadeIn .5s ease-in;
 }
+
 .animate-out {
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
     opacity: 0;
 }
+
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-  
-@font-face{
+
+@font-face {
     font-family: myFont;
     src: url(../fonts/Gabton-Malgora.otf)
 }
 
 /* menu */
 
-.navbar-brand{
+.navbar-brand {
     font-family: myFont;
-    font-size: 55px !important; 
+    font-size: 55px !important;
 }
 
-@media screen and (max-width: 600px) {
-    .navbar-brand{
-        font-size: 20px !important;
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        font-size: 30px !important;
     }
 }
 
-.container-fluid:nth-child(1){
+.container-fluid:nth-child(1) {
     width: 90%;
     margin: auto;
 }
 
-.nav-item{
+.nav-item {
     font-weight: bold;
     font-size: 20px;
 }
@@ -65,14 +78,14 @@ html {
 
 /* index */
 
-h1{
+h1 {
     text-align: center;
     font-weight: bold !important;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-.grazina-bg{
+.grazina-bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -83,28 +96,27 @@ h1{
 }
 
 @media screen and (max-width: 768px) {
-    .grazina-bg{
+    .grazina-bg {
         width: 100%;
         position: unset !important;
     }
 }
 
-@media (min-width: 768px) { 
+@media screen and (min-width: 768px) {
     .grazina-bg{
         height: 100%;
         background-position: center center;
     }
 }
 
-
-.bio{
+.bio {
     text-align: justify;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
-.bio h4{
+.bio h4 {
     margin-top: 30px !important;
     text-align: center;
 }
@@ -112,7 +124,7 @@ h1{
 
 /* filmografija */
 
-.movies{
+.movies {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -121,31 +133,31 @@ h1{
 
 /* knygos */
 
-.book img{
+.book img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.book p{
+.book p {
     text-align: center;
     margin-top: 5px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.book{
+.book {
     margin-bottom: 40px;
 }
 
 p a,
-.bookstore-link h6 a{
+.bookstore-link h6 a {
     text-decoration: none;
     color: #8c8c8c;
 }
 
 p a:hover,
-.bookstore-link h6 a:hover{
+.bookstore-link h6 a:hover {
     color: black;
 }
 
@@ -154,193 +166,220 @@ p a:hover,
 /* knyga-Gyvenimas-kaip-teatras */
 /* knyga-Rimas-Tuminas */
 
-.fa-circle-chevron-left{
+.fa-circle-chevron-left {
     font-size: 25px;
 }
 
-.back-button i, h5{
+.back-button i,
+h5 {
     display: inline-block;
 }
 
-.back-button{
+.back-button {
     margin-left: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: #8c8c8c; 
+    color: #8c8c8c;
 }
 
-.back-button:hover{
+.back-button:hover {
     color: black;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
 
-.back-button h5{
+.back-button h5 {
     font-weight: bold;
 }
 
-.intro{
+.intro {
     text-align: justify;
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
 }
 
-.book-launch h6{
+.book-launch h6 {
     text-align: center;
     margin: auto 20px;
-}  
+}
 
-.bookstore-link{
+.bookstore-link {
     margin: auto 20px;
 }
 
-.bookstore-link h6{
+.bookstore-link h6 {
     text-align: center;
 }
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    overflow: auto; 
-  }
-  
-  .modal-content {
+    overflow: auto;
+}
+
+.modal-content {
     margin: auto;
-    height: 100%;   
-    background-color: rgba(0,0,0,0.9) !important; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9) !important;
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  .close {
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
     position: absolute;
     top: 15px;
     right: 35px;
     color: #aaaaaa;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: white;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-  .gallery-img{
-      cursor: pointer;
-  }
+.gallery-img {
+    cursor: pointer;
+}
 
-  .gallery-img:hover{
-      opacity: 0.8;
-  }
+.gallery-img:hover {
+    opacity: 0.8;
+}
 
-  span.lb-number{
-      display: none !important;
-  }
+span.lb-number {
+    display: none !important;
+}
 
-  @media screen and (max-width: 768px) {
-      .modal-content img{
-          height: 65% !important;
-      }
-  }
+@media screen and (max-width: 768px) {
+    .modal-content img {
+        height: 65% !important;
+    }
+    .book-launch .row.d-flex.justify-content-evenly {
+        pointer-events: none !important;
+    }
+}
 
 
 /* reklamos */
 
-.iframe-container{
+.iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%;
     height: 0;
     margin-bottom: 20px;
-  }
+}
 
-  .iframe-container iframe{
+.iframe-container iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
 
-  .commercials{
+.commercials {
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 30px;  
-  }
-
-  .comm-images{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .comm-images img{
     margin-bottom: 30px;
-  }
+}
 
-  .commercial h5{
-      margin-top: 20px;
-      margin-bottom: 20px;
-  }
+.comm-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-  @media screen and (max-width: 992px) {
-      .comm-images img{
-          width: 350px;
-      }
-  }
+.comm-images img {
+    margin-bottom: 30px;
+}
+
+.commercial h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ @media screen and (max-width: 1024px) {
+    .comm-images img {
+        width: 450px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .commercial {
+        pointer-events: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comm-images img {
+        width: 350px;
+    }
+}
 
 
-  /* kontaktai */
+/* kontaktai */
 
-  .contacts{
-      text-align: center;
-      margin: 30px;
-  }
+.contacts {
+    text-align: center;
+    margin: 30px;
+}
 
-  .contact{
-      width: 250px;
-      margin: auto;
-      margin-bottom: 30px;
-      border: 1px solid black;
-      padding: 10px;
-      border-radius: 5px;
-  }
+.contact {
+    width: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-  .fa-envelope, .fa-facebook{
-      font-size: 40px;
-  }
+.fa-envelope,
+.fa-facebook {
+    font-size: 40px;
+}
 
-  .contact a{
+.contact a {
     color: #8c8c8c;
-  } 
+}
 
-  .contact a:hover{
-      color: black;
-  }
+.contact a:hover {
+    color: black;
+}
 
 
 /* footer */
@@ -353,16 +392,12 @@ a:link{
     background-color: #000;
     color: #fff;
     text-align: center;
-    width: 50%; 
+    width: 50%;
     right: 0;
-  }
+}
 
-  @media screen and (max-width: 768px) {
-    .footer{
+@media screen and (max-width: 768px) {
+    .footer {
         width: 100%;
     }
 }
-
-
-    
-  
